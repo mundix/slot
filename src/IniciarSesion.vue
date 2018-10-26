@@ -36,6 +36,16 @@ export default {
   },
   data() {
     return { }
+  },
+  destroyed() {
+    //PAra no perder la info debemos usar algo keepalive
+    console.log("El componente fue destruido");
+  },
+  activated(){
+    console.log("Activado");
+  },
+  deactivated(){
+    console.log("Fue desacticado");
   }
 }
 </script>
